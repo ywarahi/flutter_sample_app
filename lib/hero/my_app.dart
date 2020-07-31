@@ -134,23 +134,6 @@ class DetailPage extends StatelessWidget {
               })
           ],
         )
-//      Container(
-//        alignment: Alignment.topLeft,
-//        padding: EdgeInsets.all(24.0),
-//        child: Container(
-//          width: 100,
-//          height: 90,
-//          child: Hero(
-//              tag: this.tag, //"HeroSample",
-//              child: RaisedButton(
-//                color: this.color, //Colors.red,
-//                onPressed: () {
-//                  Navigator.of(context).pop();
-//                },
-//              )
-//          ),
-//        ),
-//      ),
     );
   }
 }
