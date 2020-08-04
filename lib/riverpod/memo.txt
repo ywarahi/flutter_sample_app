@@ -1,0 +1,2 @@
+dependencies:
+  flutter_riverpod: ^0.5.1
