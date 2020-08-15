@@ -5,6 +5,8 @@ import 'package:flutter_sample_app/state_notifier2/my_app.dart'
     as StateNotifier2;
 import 'package:flutter_sample_app/hero/my_app.dart' as Hero;
 import 'package:flutter_sample_app/riverpod/my_app.dart' as Riverpod;
+import 'package:flutter_sample_app/tab/my_app.dart' as Tab;
+import 'package:flutter_sample_app/scrollable_tab/my_app.dart' as ScrollableTab;
 
 void main() {
   runApp(MaterialApp(
@@ -16,6 +18,8 @@ void main() {
       '/RIVERPOD': (BuildContext context) => Riverpod.MyApp(),
       '/STATE_NOTIFIER': (BuildContext context) => StateNotifier.MyApp(),
       '/STATE_NOTIFIER2': (BuildContext context) => StateNotifier2.MyApp(),
+      '/TAB': (BuildContext context) => Tab.MyApp(),
+      '/SCROLLABLE_TAB': (BuildContext context) => ScrollableTab.MyApp(),
     },
   ));
 }
@@ -45,6 +49,8 @@ class HomePage extends StatelessWidget {
           getItem('RIVERPOD', '/RIVERPOD'),
           getItem('STATE_NOTIFIER', '/STATE_NOTIFIER'),
           getItem('STATE_NOTIFIER2', '/STATE_NOTIFIER2'),
+          getItem('TAB', '/TAB'),
+          getItem('SCROLLABLE_TAB', '/SCROLLABLE_TAB'),
         ],
       ),
     );
