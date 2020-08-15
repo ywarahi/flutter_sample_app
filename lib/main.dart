@@ -6,7 +6,8 @@ import 'package:flutter_sample_app/state_notifier2/my_app.dart'
 import 'package:flutter_sample_app/hero/my_app.dart' as Hero;
 import 'package:flutter_sample_app/riverpod/my_app.dart' as Riverpod;
 import 'package:flutter_sample_app/tab/my_app.dart' as Tab;
-import 'package:flutter_sample_app/scrollable_tab/my_app.dart' as ScrollableTab;
+import 'package:flutter_sample_app/tab_scrollable/my_app.dart' as TabScrollable;
+import 'package:flutter_sample_app/tab_nested/my_app.dart' as TabNested;
 
 void main() {
   runApp(MaterialApp(
@@ -19,7 +20,8 @@ void main() {
       '/STATE_NOTIFIER': (BuildContext context) => StateNotifier.MyApp(),
       '/STATE_NOTIFIER2': (BuildContext context) => StateNotifier2.MyApp(),
       '/TAB': (BuildContext context) => Tab.MyApp(),
-      '/SCROLLABLE_TAB': (BuildContext context) => ScrollableTab.MyApp(),
+      '/SCROLLABLE_TAB': (BuildContext context) => TabScrollable.MyApp(),
+      '/TAB_NESTED': (BuildContext context) => TabNested.MyApp(),
     },
   ));
 }
@@ -51,6 +53,7 @@ class HomePage extends StatelessWidget {
           getItem('STATE_NOTIFIER2', '/STATE_NOTIFIER2'),
           getItem('TAB', '/TAB'),
           getItem('SCROLLABLE_TAB', '/SCROLLABLE_TAB'),
+          getItem('TAB_NESTED', '/TAB_NESTED'),
         ],
       ),
     );
