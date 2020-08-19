@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample_app/billi_news_client/my_app.dart' as BNC;
 import 'package:flutter_sample_app/original/my_app.dart' as Original;
 import 'package:flutter_sample_app/state_notifier/my_app.dart' as StateNotifier;
 import 'package:flutter_sample_app/state_notifier2/my_app.dart'
@@ -17,6 +18,7 @@ void main() {
     title: 'Billiards News',
     home: HomePage(),
     routes: {
+      '/BNC': (BuildContext context) => BNC.MyApp(),
       '/ORIGINAL': (BuildContext context) => Original.MyApp(),
       '/HERO': (BuildContext context) => Hero.MyApp(),
       '/RIVERPOD': (BuildContext context) => Riverpod.MyApp(),
@@ -52,6 +54,7 @@ class HomePage extends StatelessWidget {
       drawer: DrawerView(),
       body: ListView(
         children: <Widget>[
+          getItem('BNC', '/BNC'),
           getItem('ORIGINAL', '/ORIGINAL'),
           getItem('HERO', '/HERO'),
           getItem('RIVERPOD', '/RIVERPOD'),
