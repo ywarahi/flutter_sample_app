@@ -10,6 +10,7 @@ import 'package:flutter_sample_app/tab_scrollable/my_app.dart' as TabScrollable;
 import 'package:flutter_sample_app/tab_nested/my_app.dart' as TabNested;
 import 'package:flutter_sample_app/draggable_scrollbar/my_app.dart' as DraggableScrollbar;
 import 'package:flutter_sample_app/tab_sliver/my_app.dart' as TabSliver;
+import 'package:flutter_sample_app/bottom_navigation_bar/my_app.dart' as BottomNavi;
 
 void main() {
   runApp(MaterialApp(
@@ -26,6 +27,7 @@ void main() {
       '/TAB_NESTED': (BuildContext context) => TabNested.MyApp(),
       '/DRAGGABLE_SCROLLBAR': (BuildContext context) => DraggableScrollbar.MyApp(),
       '/TAB_SLIVER': (BuildContext context) => TabSliver.MyApp(),
+      '/BOTTOM_NAVI': (BuildContext context) => BottomNavi.MyApp(),
     },
   ));
 }
@@ -60,6 +62,7 @@ class HomePage extends StatelessWidget {
           getItem('TAB_NESTED', '/TAB_NESTED'),
           getItem('DRAGGABLE_SCROLLBAR', '/DRAGGABLE_SCROLLBAR'),
           getItem('TAB_SLIVER', '/TAB_SLIVER'),
+          getItem('BOTTOM_NAVI', '/BOTTOM_NAVI'),
         ],
       ),
     );
