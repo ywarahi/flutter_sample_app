@@ -17,16 +17,15 @@ class InboxPage extends StatelessWidget {
           ),
         ),
         SliverFixedExtentList(
-          itemExtent: 200.0,
+          itemExtent: 50.0,
           delegate: SliverChildBuilderDelegate(
                 (BuildContext context, int index) {
-              return Container(
-                alignment: Alignment.center,
-                color: Colors.lightBlue[100 * (index % 9)],
-                child: Text('list item $index', style: TextStyle(fontSize: 30),),
+              return ListTile(
+                title: Text('Item $index'),
               );
             },
-          ),
+            childCount: 30,
+          )
         ),
       ],
     );

@@ -1,6 +1,7 @@
 // Sample: BottomNavigationBar
 import 'package:flutter/material.dart';
 import 'package:flutter_sample_app/appl_template/about_page.dart';
+import 'package:flutter_sample_app/appl_template/category_page.dart';
 import 'package:flutter_sample_app/appl_template/inbox_page.dart';
 import 'package:flutter_sample_app/appl_template/tabs_page.dart';
 
@@ -35,9 +36,10 @@ class _MyAppState extends State<MyApp> {
         onPageChanged: onPageChanged,
         children: [
           InboxPage(PageStorageKey<String>('InboxPage')),
+          CategoryPage(PageStorageKey<String>('CategoryPage')),
           //Tab1Page('受信'), // InboxView(), //('受信'),
           TabsPage('検索', PageStorageKey<String>('Tabs')),
-          AboutPage(PageStorageKey<String>('AboutPage')),
+          //AboutPage(PageStorageKey<String>('AboutPage')),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -45,8 +47,9 @@ class _MyAppState extends State<MyApp> {
         onTap: onTapBottomNavigation,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.cloud_download), title: Text("受信")),
+          BottomNavigationBarItem(icon: Icon(Icons.collections_bookmark), title: Text("ｶﾃｺﾞﾘ")),
           BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("検索")),
-          BottomNavigationBarItem(icon: Icon(Icons.info_outline), title: Text("About")),
+          //BottomNavigationBarItem(icon: Icon(Icons.info_outline), title: Text("About")),
         ],
       ),
       floatingActionButton: FloatingActionButton(child: Icon(Icons.search),),
