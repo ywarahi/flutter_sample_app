@@ -1,6 +1,10 @@
 // Sample: BottomNavigationBar
 import 'package:flutter/material.dart';
-import 'package:flutter_sample_app/billi_news_client/tabs.dart';
+import 'package:flutter_sample_app/appl_template/about_page.dart';
+import 'package:flutter_sample_app/appl_template/inbox_page.dart';
+import 'package:flutter_sample_app/appl_template/tabs_page.dart';
+
+import 'tab1_page.dart';
 
 class MyApp extends StatefulWidget {
   @override
@@ -14,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _pageController = PageController();
+    _pageController = PageController(keepPage: true);
   }
 
   @override
@@ -30,9 +34,10 @@ class _MyAppState extends State<MyApp> {
         controller: _pageController,
         onPageChanged: onPageChanged,
         children: [
-          Tabs('受信'),
-          Tabs('検索'),
-          Tabs('About'),
+          InboxPage(PageStorageKey<String>('InboxPage')),
+          //Tab1Page('受信'), // InboxView(), //('受信'),
+          TabsPage('検索', PageStorageKey<String>('Tabs')),
+          AboutPage(PageStorageKey<String>('AboutPage')),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -44,6 +49,7 @@ class _MyAppState extends State<MyApp> {
           BottomNavigationBarItem(icon: Icon(Icons.info_outline), title: Text("About")),
         ],
       ),
+      floatingActionButton: FloatingActionButton(child: Icon(Icons.search),),
     );
   }
 
@@ -61,25 +67,3 @@ class _MyAppState extends State<MyApp> {
     });
   }
 }
-
-//class PageWidget extends StatelessWidget {
-//  final Color color;
-//  final String title;
-//
-//  PageWidget({Key key, this.color, this.title}) : super(key: key);
-//
-//  @override
-//  Widget build(BuildContext context) {
-//    return Container(
-//      color: color,
-//      child: Center(
-//        child: Text(
-//          title,
-//          style: TextStyle(
-//            fontSize: 25,
-//          ),
-//        ),
-//      ),
-//    );
-//  }
-//}

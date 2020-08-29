@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Tabs extends StatelessWidget {
-  Tabs(this._title);
+class Tab1Page extends StatelessWidget {
+  Tab1Page(this._title);
 
   String _title;
-  final List<String> _tabs = <String>['Tab1', 'Tab2', 'Tab3'];
+  List<Widget> _tabs = <Widget>[Tab(text: '')];
 
   @override
   Widget build(BuildContext context) {
@@ -15,27 +15,28 @@ class Tabs extends StatelessWidget {
           return <Widget>[
             SliverOverlapAbsorber(
               handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context),
-              child: SliverAppBar(
+              sliver: SliverAppBar(
                 title: Text(_title),
                 pinned: true,
+
                 expandedHeight: 150.0,
                 forceElevated: innerBoxIsScrolled,
                 bottom: TabBar(
-                  tabs: _tabs.map((String name) => Tab(text: name)).toList(),
+                  tabs: _tabs,
                 ),
               ),
             ),
           ];
         },
         body: TabBarView(
-          children: _tabs.map((String name) {
-            return SafeArea(
+          children: <Widget>[
+            SafeArea(
               top: false,
               bottom: false,
               child: Builder(
                 builder: (BuildContext context) {
                   return CustomScrollView(
-                    key: PageStorageKey<String>(name),
+                    key: PageStorageKey<String>(''),
                     slivers: <Widget>[
                       SliverOverlapInjector(
                         handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context),
@@ -58,8 +59,8 @@ class Tabs extends StatelessWidget {
                   );
                 },
               ),
-            );
-          }).toList(),
+            )
+          ],
         ),
       ),
     );
