@@ -1,0 +1,4 @@
+https://pub.dev/packages/horizontal_data_table
+
+dependencies:
+  horizontal_data_table: ^1.0.6+2

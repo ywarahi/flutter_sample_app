@@ -95,6 +95,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.11.0+1"
+  horizontal_data_table:
+    dependency: "direct main"
+    description:
+      name: horizontal_data_table
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.6+2"
   image:
     dependency: transitive
     description:
@@ -150,7 +157,7 @@ packages:
       name: provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.3.1"
+    version: "4.3.2+2"
   quiver:
     dependency: transitive
     description:
