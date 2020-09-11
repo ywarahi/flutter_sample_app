@@ -1,0 +1,121 @@
+ŸFirst commit
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\warahi\AndroidStudioProjects\flutter_sample_app>git init
+Initialized empty Git repository in C:/Users/warahi/AndroidStudioProjects/flutte
+r_sample_app/.git/
+
+C:\Users\warahi\AndroidStudioProjects\flutter_sample_app>git add .
+warning: LF will be replaced by CRLF in pubspec.lock.
+The file will have its original line endings in your working directory
+
+C:\Users\warahi\AndroidStudioProjects\flutter_sample_app>git commit -m "Initial
+commit."
+[master (root-commit) 00e5fbd] Initial commit.
+ 62 files changed, 1678 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .metadata
+ create mode 100644 README.md
+ create mode 100644 android/.gitignore
+ create mode 100644 android/app/build.gradle
+ create mode 100644 android/app/src/debug/AndroidManifest.xml
+ create mode 100644 android/app/src/main/AndroidManifest.xml
+ create mode 100644 android/app/src/main/kotlin/app/ywarahi/flutter/sample/flutt
+er_sample_app/MainActivity.kt
+ create mode 100644 android/app/src/main/res/drawable/launch_background.xml
+ create mode 100644 android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+ create mode 100644 android/app/src/main/res/values/styles.xml
+ create mode 100644 android/app/src/profile/AndroidManifest.xml
+ create mode 100644 android/build.gradle
+ create mode 100644 android/gradle.properties
+ create mode 100644 android/gradle/wrapper/gradle-wrapper.properties
+ create mode 100644 android/settings.gradle
+ create mode 100644 ios/.gitignore
+ create mode 100644 ios/Flutter/AppFrameworkInfo.plist
+ create mode 100644 ios/Flutter/Debug.xcconfig
+ create mode 100644 ios/Flutter/Release.xcconfig
+ create mode 100644 ios/Runner.xcodeproj/project.pbxproj
+ create mode 100644 ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspac
+edata
+ create mode 100644 ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWor
+kspaceChecks.plist
+ create mode 100644 ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/Worksp
+aceSettings.xcsettings
+ create mode 100644 ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+ create mode 100644 ios/Runner.xcworkspace/contents.xcworkspacedata
+ create mode 100644 ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+ create mode 100644 ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsett
+ings
+ create mode 100644 ios/Runner/AppDelegate.swift
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x
+1024@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20
+@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20
+@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20
+@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29
+@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29
+@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29
+@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40
+@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40
+@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40
+@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60
+@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60
+@3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76
+@1x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76
+@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x
+83.5@2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.jso
+n
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.
+png
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@
+2x.png
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@
+3x.png
+ create mode 100644 ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+ create mode 100644 ios/Runner/Base.lproj/LaunchScreen.storyboard
+ create mode 100644 ios/Runner/Base.lproj/Main.storyboard
+ create mode 100644 ios/Runner/Info.plist
+ create mode 100644 ios/Runner/Runner-Bridging-Header.h
+ create mode 100644 lib/main.dart
+ create mode 100644 pubspec.lock
+ create mode 100644 pubspec.yaml
+ create mode 100644 test/widget_test.dart
+
+C:\Users\warahi\AndroidStudioProjects\flutter_sample_app>git remote add origin h
+ttps://github.com/ywarahi/flutter_sample_app.git
+
+C:\Users\warahi\AndroidStudioProjects\flutter_sample_app>git push -u origin mast
+er
+Enumerating objects: 90, done.
+Counting objects: 100% (90/90), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (69/69), done.
+Writing objects: 100% (90/90), 53.98 KiB | 1.80 MiB/s, done.
+Total 90 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/ywarahi/flutter_sample_app.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\warahi\AndroidStudioProjects\flutter_sample_app>
