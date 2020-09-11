@@ -47,6 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  //HorizontalDataTable
   Widget _getBodyWidget() {
     return Container(
       child: HorizontalDataTable(
@@ -69,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  //Ｒ×１ヘッダ：List<Widget>　
   List<Widget> _getTitleWidget() {
     return [
       FlatButton(
@@ -101,6 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
     ];
   }
 
+  //１×１ヘッダ：Widget
   Widget _getTitleItemWidget(String label, double width) {
     return Container(
       child: Text(label, style: TextStyle(fontWeight: FontWeight.bold)),
@@ -111,6 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  //１×Ｃ列：Widget（index）
   Widget _generateFirstColumnRow(BuildContext context, int index) {
     return Container(
       child: Text(user.userInfo[index].name),
@@ -121,6 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  //Ｒ×Ｃ－１行：Row（index）
   Widget _generateRightHandSideColumnRow(BuildContext context, int index) {
     return Row(
       children: <Widget>[
