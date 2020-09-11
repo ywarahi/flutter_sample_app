@@ -13,6 +13,7 @@ import 'package:flutter_sample_app/draggable_scrollbar/my_app.dart' as Draggable
 import 'package:flutter_sample_app/tab_sliver/my_app.dart' as TabSliver;
 import 'package:flutter_sample_app/bottom_navigation_bar/my_app.dart' as BottomNavi;
 import 'package:flutter_sample_app/horizontal_data_table/my_app.dart' as HDataTable;
+import 'package:flutter_sample_app/sqlite_data_table/my_app.dart' as SQLDataTable;
 
 void main() {
   runApp(MaterialApp(
@@ -32,6 +33,7 @@ void main() {
       '/TAB_SLIVER': (BuildContext context) => TabSliver.MyApp(),
       '/BOTTOM_NAVI': (BuildContext context) => BottomNavi.MyApp(),
       '/H_DATA_TABLE': (BuildContext context) => HDataTable.MyApp(),
+      '/SQL_DATA_TABLE': (BuildContext context) => SQLDataTable.MyApp(),
     },
   ));
 }
@@ -69,6 +71,7 @@ class HomePage extends StatelessWidget {
           getItem('TAB_SLIVER', '/TAB_SLIVER'),
           getItem('BOTTOM_NAVI', '/BOTTOM_NAVI'),
           getItem('H_DATA_TABLE', '/H_DATA_TABLE'),
+          getItem('SQL_DATA_TABLE', '/SQL_DATA_TABLE'),
         ],
       ),
     );
